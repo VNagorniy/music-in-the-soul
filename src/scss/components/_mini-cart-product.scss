@@ -30,6 +30,7 @@
       content: "";
       position: absolute;
       inset: 0;
+      pointer-events: auto;
     }
   }
 
@@ -41,5 +42,26 @@
     svg {
       fill: var(--color-secondary);
     }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 16px;
+    z-index: 1;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+
+  button,
+  .stepper {
+    position: relative;
   }
 }

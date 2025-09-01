@@ -2,6 +2,8 @@
   position: absolute;
   right: 0;
   top: 80px;
+  display: flex;
+  flex-direction: column;
   border-left: 1px solid var(--color-neutral-muted);
   width: 340px;
   height: calc(100vh - 80px);
@@ -48,10 +50,48 @@
 
   &__content {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     overflow-y: auto;
+  }
+
+  &__products {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
     padding: 0 12px;
-    height: 100%;
     gap: 4px;
+  }
+
+  &__bottom {
+    margin-top: var(--gap);
+    border-top: 1px solid var(--color-neutral-muted);
+  }
+
+  &__result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--gap);
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 122%;
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+
+  &__sum {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 122%;
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+
+  &__btn {
+    width: 100%;
   }
 }
