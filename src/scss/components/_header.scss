@@ -1,1 +1,96 @@
-// ваш код
+.header {
+  &__top {
+    border-bottom: 1px solid var(--color-neutral-muted);
+    padding: 20px 0;
+  }
+
+  &__bottom {
+    border-bottom: 1px solid var(--color-neutral-muted);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    margin-right: 36px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 32px;
+  }
+
+  &__action {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    transition: color 0.3s ease-in-out;
+
+    .icon {
+      fill: currentcolor;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px dashed currentcolor;
+      outline-offset: 3px;
+    }
+
+    @include hover {
+      color: var(--color-primary-hover);
+    }
+
+    &:active {
+      color: var(--color-primary-active);
+    }
+  }
+
+  &__fav,
+  &__cart {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__catalog {
+    margin-left: calc(-1 * var(--gap));
+  }
+
+  &__phone {
+    margin-left: auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--color-primary);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px dashed currentcolor;
+      outline-offset: 3px;
+    }
+
+    @include hover {
+      color: var(--color-primary-hover);
+    }
+
+    &:active {
+      color: var(--color-primary-active);
+    }
+  }
+}
