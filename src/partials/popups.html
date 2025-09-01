@@ -11,7 +11,43 @@
       </button>
    </div>
    <div class="mini-cart__content">
-      <div class="mini-cart__products"></div>
+      <div class="mini-cart__products">
+         <article class="mini-cart-product">
+            <div class="mini-cart-product__top">
+               <picture>
+                  <source srcset="img/products/1-mini.webp" type="image/webp">
+                  <img loading="lazy" src="img/products/1-mini.png" class="mini-cart-product__image" width="52"
+                     height="52" alt="Neumann TLM 102 BK">
+               </picture>
+               <h3 class="mini-cart-product__title">
+                  <a href="#" class="mini-cart-product__link">Neumann TLM 102 BK</a>
+               </h3>
+               <button class="btn-reset mini-cart-product__delete" aria-label="Удалить из мини-корзины">
+                  <svg class="icon">
+                     <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+               </button>
+            </div>
+            <div class="mini-cart-product__bottom">
+               <div class="stepper mini-cart-product__stepper">
+                  <button class="btn-reset stepper__minus" aria-label="Уменьшить">
+                     <svg class="icon">
+                        <use xlink:href="img/sprite.svg#minus"></use>
+                     </svg>
+                  </button>
+                  <input class="input-reset stepper__input" type="number" value="1" maxlength="2">
+                  <button class="btn-reset stepper__plus" aria-label="Увеличить">
+                     <svg class="icon">
+                        <use xlink:href="img/sprite.svg#plus"></use>
+                     </svg>
+                  </button>
+               </div>
+               <div class="mini-cart-product__price">
+                  91 890 ₽
+               </div>
+            </div>
+         </article>
+      </div>
       <div class="mini-cart__bottom">
          <div class="mini-cart__result">
             <div class="mini-cart__text">Итог</div>
